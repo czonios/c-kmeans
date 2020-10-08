@@ -1,11 +1,9 @@
-# Artificial Neural Networks
-> A library of classic fully connected artificial neural networks in C.
+# K-Means in C
+> An implementation of the k-means algorithm in C.
 
 <!-- [Project Website](https://czonios.github.io/c-kmeans) -->
 
-This implementation of artificial neural networks contains functions for creating, training and predicting with custom neural networks.
-
-The user can specify the number of layers, as well as the number of neurons each layer has, the activation functions, the input and output dimensions and more.
+This implementation of the k-means algorithm contains functions for training and outputting the learned cluster centers. It also outputs the total dispersion of clustering, so you can run it multiple times with multiple different K and find the simplest solution that gives the least dispersion.
 
 <!-- ![](header.png) -->
 
@@ -34,13 +32,10 @@ make clean
 
 ## Usage example
 
-The ``mlp_settings.h`` file contains the settings of the neural network.
+The ``main.c`` file contains the defined settings of the algorithm.
 
 ```sh
-# uses the default settings from mlp_settings.h
-# x_file contains the inputs as a 2D array (num_samples X num_inputs)
-# t_file contains the targets as a 2D array (num_samples X num_inputs)
-./main x_file t_file
+./main
 ```
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
@@ -61,7 +56,7 @@ gdb debug
 
 ## Meta
 
-Christos A. Zonios – [@czonios](https://twitter.com/czonios) – czonios (at) gmail (dot) com
+Christos A. Zonios – [@czonios](https://czonios.github.io) – czonios (at) gmail (dot) com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
