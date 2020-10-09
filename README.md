@@ -5,7 +5,7 @@
 
 This implementation of the k-means algorithm contains functions for training and outputting the learned cluster centers. It also outputs the total dispersion of clustering, so you can run it multiple times with multiple different K and find the simplest solution that gives the least dispersion.
 
-<!-- ![](header.png) -->
+![](https://github.com/czonios/c-kmeans/blob/master/graphs/kmeans.png)
 
 ## Installation
 
