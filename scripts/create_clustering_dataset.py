@@ -61,6 +61,7 @@ def main():
 	"""
 	samples = create_points()
 	shuffle(samples)
+	script_dir = os.path.dirname(os.path.abspath(__file__))
 
 	chameleon = (0.541,0.886,0.204)
 	butter = (0.988,0.914,0.310)
@@ -71,6 +72,7 @@ def main():
 
 	for sample in samples:
 		plt.plot(sample[0], sample[1], color=skyblue, marker='x')
+	plt.savefig(os.path.join(script_dir, '../graphs/dataset.png'), format='png')
 	plt.show()
 
 	script_dir = os.path.dirname(__file__)

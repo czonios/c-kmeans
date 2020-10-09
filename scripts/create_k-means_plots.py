@@ -56,7 +56,7 @@ def plot_clusters():
 		plt.plot(sample[0], sample[1], color=sage, marker='+')
 	for center in centers:
 		plt.plot(center[0], center[1], color=scarletred, marker='*')
-		
+	plt.savefig(os.path.join(script_dir, '../graphs/kmeans.png'), format='png')
 	plt.show()
 
 if __name__ == '__main__':
